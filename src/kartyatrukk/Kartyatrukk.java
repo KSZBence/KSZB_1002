@@ -8,12 +8,15 @@ public class Kartyatrukk {
     Scanner sc = new Scanner(System.in);
     String[] pakli = new String[22];
     public static void main(String[] args) {
-        
+        new Kartyatrukk().indit();
         
     }
     
     public void indit(){
-        new Kartyatrukk().kirak();
+        kirak();
+        for (int i = 0; i < pakli.length; i++) {
+            System.out.println(pakli[i]);
+        }
     }
     
     public void kirak(){
